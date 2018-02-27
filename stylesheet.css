@@ -2,7 +2,7 @@
 header {
   background-color: #00704B;
 }
-#logo{
+#navLogo{
   color: #4CFFC4;
 }
 .navbar{
@@ -12,7 +12,41 @@ header {
 }
 .navItem{
   display: inline;
+  float: right;
 }
 .home {
   clear: both;
+  text-align: center;
+  background-color: #4CFFC4;
+  padding: 20px;
+}
+
+#aboutMe {
+  background-color: white;
+}
+#projects {
+  background-color: white;
+}
+#profilePhoto {
+  border-radius: 50%;
+}
+#name {
+  width: 40%;
+  margin: auto;
+  padding: 15px;
+  border-bottom: 1px solid #00704B;
+}
+.socialLinks {
+  display: inline;
+}
+footer {
+  /* THIS IS NOT WORKING  */
+  background-color: #00704B;
+}
+footer p {
+  float: left;
+  background-color: #00704B;
+}
+.socialLogo {
+  padding: 5px;
 }
