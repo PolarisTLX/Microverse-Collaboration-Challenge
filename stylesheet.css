@@ -52,11 +52,20 @@ footer p {
   padding: 5px;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-background-color: #fff;
+.navbar-fixed-top .navbar-toggle .icon-bar {
+  background-color: #CCC;
 }
 
-.navbar-default .navbar-toggle {
-border-color: #ddd;
-background-color: black;
+.navbar-fixed-top .navbar-toggle {
+  border-color: #CCC;
 }
+.navbar-nav>li>a {
+  color: #CCC;
+}
+
+/* button.navbar-toggle {
+    background-color: #CCC;
+} */
+/* span.icon-bar {
+    background-color: #CCC;
+} */
