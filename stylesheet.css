@@ -1,0 +1,18 @@
+
+header {
+  background-color: #00704B;
+}
+#logo{
+  color: #4CFFC4;
+}
+.navbar{
+  background-color: #00704B;
+  list-style-type:none;
+  float: right;
+}
+.navItem{
+  display: inline;
+}
+.home {
+  clear: both;
+}
