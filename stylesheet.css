@@ -1,17 +1,17 @@
 /* NAVBAR SECTION */
 .navbar-fixed-top .navbar-toggle .icon-bar {
-  background-color: #CCC;
+  background-color: #ADF0A7;
 }
 
 .navbar-fixed-top .navbar-toggle {
-  border-color: #8AEA82;
+  border-color: #ADF0A7;
 }
 .navbar-nav>li>a {
-  color: #8AEA82;
+  color: #ADF0A7;
 }
 
 #navLogo{
-  color: #8AEA82;
+  color: #ADF0A7;
   font-weight: bold;
 }
 .navbar{
@@ -25,7 +25,7 @@
 .home {
   clear: both;
   text-align: center;
-  background-color: #8AEA82;
+  background-color: #ADF0A7;
   padding: 75px;
   border-bottom: 1px solid #007F17;
   color: black;
@@ -34,10 +34,11 @@
 #profilePhoto {
   border-radius: 50%;
   margin: auto;
+  max-height: 200px;
 }
 
 #name {
-  width: 30%;
+  width: 40%;
   margin: auto;
   padding: 15px;
   border-bottom: 1px solid #007F17;
@@ -85,7 +86,7 @@ footer {
   padding-bottom: 15px;
 }
 footer p {
-  color: #CCC;
+  color: #ADF0A7;
   background-color: #007F17;
   float: left;
   padding-top: 8px;
