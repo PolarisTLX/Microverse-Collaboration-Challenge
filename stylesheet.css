@@ -26,7 +26,7 @@
   clear: both;
   text-align: center;
   background-color: #ADF0A7;
-  padding: 75px;
+  padding: 100px 75px 55px 75px;
   border-bottom: 1px solid #007F17;
   color: black;
 }
@@ -38,7 +38,6 @@
 }
 
 #name {
-  /* width: 40%; */
   margin: auto;
   padding: 15px;
   border-bottom: 1px solid #007F17;
@@ -57,7 +56,6 @@
 }
 .socialLinks {
   display: inline;
-  margin-bottom: -10px;
 }
 .socialLogo {
   padding: 5px 10px 5px 0px;
@@ -68,6 +66,7 @@
 /* ABOUT ME / PROJECTS  SECTION */
 #aboutMe {
   background-color: white;
+  padding-top: 25px;
 }
 #projects {
   background-color: white;
@@ -79,14 +78,10 @@
 .projectLinks {
   float: left;
 }
-.projectDescrip {
-  /* float: right; */
-}
 
 
 /* FOOTER */
 footer {
-  /* THIS IS NOT WORKING  */
   background-color: #007F17;
   padding-top: 25px;
   padding-bottom: 15px;
@@ -102,8 +97,6 @@ footer ul {
 }
 .footerLogos {
   display: inline;
-  /* float: right; */
-  /* padding-bottom: 10px; */
 }
 .footerIconDiv {
   padding-left: 0;
@@ -111,6 +104,4 @@ footer ul {
 footer img {
   height: 30px;
   padding-right: 5px;
-  /* margin-bottom: 10px; */
-  /* margin: auto; */
 }

@@ -1,8 +1,6 @@
-/* for small devices: phones */
+/* for small devices: tablets & phones */
 @media only screen and (max-width: 991px) {
-  /* #name {
-    font-size: 2em;
-  } */
+
   section.home {
     padding-bottom: 25px;
   }
