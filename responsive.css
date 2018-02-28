@@ -10,7 +10,11 @@
   /* NOTE: Screen width of 992 to 1046 pixels displays LinkedIn below the icon */
 
   .home ul {
-    margin-left: 40%;
+    margin-left: 35%;
     text-align: left;
+  }
+
+  .socialDiv {
+    padding: 0;
   }
 }
