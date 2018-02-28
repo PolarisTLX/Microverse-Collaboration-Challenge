@@ -95,15 +95,18 @@ footer p {
   color: #ADF0A7;
   background-color: #007F17;
   float: left;
-  padding-top: 8px;
 }
 footer ul {
+  padding-left: 0;
   float: right;
 }
-.footerLogos{
+.footerLogos {
   display: inline;
   /* float: right; */
   /* padding-bottom: 10px; */
+}
+.footerIconDiv {
+  padding-left: 0;
 }
 footer img {
   height: 30px;
