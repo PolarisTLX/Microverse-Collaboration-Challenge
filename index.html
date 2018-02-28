@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- JQuery MUST be above the bootstrap for some of the feautues, like hamburger, to work properly-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -11,9 +14,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- jQuery for Bootstrap Navbar Hamburger to work  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
     <title>Kyle's Portfolio</title>
   </head>
@@ -57,51 +57,59 @@
       <section class="home">
 
       <img id="profilePhoto" src="images/profile_photo.jpg" alt="Profile Photo" height="200"/><br/>
-      <h1 id="name">
-        Kyle Lemon
-      </h1>
-      <!-- Horizontal line goes here -->
-      <h3>
-        Full Stack Developer
-      </h3>
+      <h1 id="name">  Kyle Lemon  </h1>
+      <!-- Horizontal line achieved by border-bottom on h1 tag above -->
+      <h3>  Full Stack Developer  </h3>
 
       <ul style="list-style-type:none text-align: center">
-        <li class="socialLinks"><a href="mailto:james.kyle.lemon@gmail.com?Subject=Microverse" target="blank"><img class="socialLogo" src="images/mail-logo.png" alt="E-mail" height="30"/>Email</a></li>
-        <li class="socialLinks"><a href="https://www.linkedin.com/in/kyle-lemon-10487555/" target="blank"><img class="socialLogo" src="images/linkedin-logo.png" alt="LinkedIn" height="30"/>GitHub</a></li>
-        <li class="socialLinks"><a href="https://github.com/jklemon17" target="blank"><img class="socialLogo" src="images/github-logo.png" alt="GitHub" height="30"/>LinkedIn</a></li>
+        <li class="socialLinks"><a href="mailto:james.kyle.lemon@gmail.com?Subject=Microverse" target="blank"><img class="socialLogo" src="images/mail-logo.png" alt="E-mail"/>Email</a></li>
+        <li class="socialLinks"><a href="https://www.linkedin.com/in/kyle-lemon-10487555/" target="blank"><img class="socialLogo" src="images/linkedin-logo.png" alt="LinkedIn"/>GitHub</a></li>
+        <li class="socialLinks"><a href="https://github.com/jklemon17" target="blank"><img class="socialLogo" src="images/github-logo.png" alt="GitHub"/>LinkedIn</a></li>
       </ul>
 
       </section>
 
 
-      <!-- Horizontal line goes here -->
+      <!-- Horizontal line achieved via background -->
+
 
       <section id="aboutMe">
+        <div class="container">
 
           <h3>About Me</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        </div>
       </section>
 
       <section id="projects">
+        <div class="container">
+          <h3>Projects</h3>
+          <ul style="list-style-type:none">
+            <li><a href="https://floating-earth-90423.herokuapp.com/" target="blank">Rails Tutorial Sample App</a> My version of Michael Hartl's Ruby on Rails sample app.</li>
+            <li><a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank">Brick Breaker</a> A simple brick-breaker game.</li>
+            <li><a href="https://polaristlx.github.io/Snowy-Background-Project/" target="blank">Snowy Background</a> A snowy background animation.</li>
+            <li><a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank">War Card Game</a> A Javascript card game.</li>
+          </ul>
 
-        <h3>Projects</h3>
-        <ul>
-          <li><a href="https://floating-earth-90423.herokuapp.com/" target="blank">Rails Tutorial Sample App</a> My version of Michael Hartl's Ruby on Rails sample app.</li>
-          <li><a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank">Brick Breaker</a> A simple brick-breaker game.</li>
-          <li><a href="https://polaristlx.github.io/Snowy-Background-Project/" target="blank">Snowy Background</a> A snowy background animation.</li>
-          <li><a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank">War Card Game</a> A Javascript card game.</li>
-        </ul>
-
-
+        </div>
       </section>
       <footer id="contact">
-        <p>Made with &#10084; by collaboration between Kyle Lemon and Paul Rail.</p>
-        <ul style="list-style-type:none">
-          <li class="navItem"><a href="mailto:james.kyle.lemon@gmail.com?Subject=Microverse" target="blank"><img class="socialLogo" src="images/mail-logo.png" alt="E-mail" height="20"/></a></li>
-          <li class="navItem"><a href="https://www.linkedin.com/in/kyle-lemon-10487555/" target="blank"><img class="socialLogo" src="images/linkedin-logo.png" alt="LinkedIn" height="20"/></a></li>
-          <li class="navItem"><a href="https://github.com/jklemon17" target="blank"><img class="socialLogo" src="images/github-logo.png" alt="GitHub" height="20"/></a></li>
-        </ul>
+        <div class="container">
+
+            <div class="row">
+              <div class="col-md-6">
+                  <p>Made with &#10084; by collaboration between Kyle Lemon and Paul Rail.</p>
+              </div>
+              <div class="col-md-6">
+                  <ul style="list-style-type:none">
+                    <li class="footerLogos"><a href="mailto:james.kyle.lemon@gmail.com?Subject=Microverse" target="blank"><img src="images/mail-logo.png" alt="E-mail"/></a></li>
+                    <li class="footerLogos"><a href="https://www.linkedin.com/in/kyle-lemon-10487555/" target="blank"><img src="images/linkedin-logo.png" alt="LinkedIn"/></a></li>
+                    <li class="footerLogos"><a href="https://github.com/jklemon17" target="blank"><img src="images/github-logo.png" alt="GitHub"/></a></li>
+                  </ul>
+              </div>
+            </div>
+
+        </div>
       </footer>
     <!-- </div> -->
   </body>
