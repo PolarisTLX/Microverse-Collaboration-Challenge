@@ -15,7 +15,11 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- CSS GENERAL -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- RESPONSIVE CSS FOR SMALLER SCREEN SIZES -->
+    <link rel="stylesheet" type="text/css" href="responsive.css">
 
     <title>Kyle's Portfolio</title>
   </head>
@@ -60,24 +64,24 @@
 
         <div class="container-fluid">
           <div class="row center-block">
-            <div class="col-xs-12">
+            <div class="col-md-12">
               <img id="profilePhoto" class="img-responsive" src="images/profile_photo.jpg" alt="Profile Photo"/><br/>
             </div>
           </div>
         </div>
 
         <div class="container-fluid">
-          <div class="row text-center">
-            <div class="col-xs-12">
-              <h1 id="name"> KYLE LEMON </h1>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <h1 id="name">KYLE LEMON</h1>
             </div>
           </div>
         </div>
 
       <!-- Horizontal line achieved by border-bottom on h1 tag above -->
         <div class="container-fluid">
-          <div class="row text-center">
-            <div class="col-xs-12">
+          <div class="row">
+            <div class="col-md-12">
               <h3 id="jobTitle"> Full Stack Developer </h3>
             </div>
           </div>
@@ -85,11 +89,21 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-2 col-md-offset-3">
               <ul style="list-style-type:none text-align: center">
                 <li class="socialLinks"><a href="mailto:james.kyle.lemon@gmail.com?Subject=Microverse" target="blank"><img class="socialLogo" src="images/mail-logo.png" alt="E-mail"/>Email</a></li>
-                <li class="socialLinks"><a href="https://www.linkedin.com/in/kyle-lemon-10487555/" target="blank"><img class="socialLogo" src="images/linkedin-logo.png" alt="LinkedIn"/>GitHub</a></li>
-                <li class="socialLinks"><a href="https://github.com/jklemon17" target="blank"><img class="socialLogo" src="images/github-logo.png" alt="GitHub"/>LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul style="list-style-type:none text-align: center">
+
+                <li class="socialLinks"><a href="https://www.linkedin.com/in/kyle-lemon-10487555/" target="blank"><img class="socialLogo" src="images/linkedin-logo.png" alt="LinkedIn"/>LinkedIn</a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul style="list-style-type:none text-align: center">
+                <li class="socialLinks"><a href="https://github.com/jklemon17" target="blank"><img class="socialLogo" src="images/github-logo.png" alt="GitHub"/>GitHub</a></li>
               </ul>
             </div>
           </div>
@@ -105,7 +119,7 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-sm-10 col-sm-offset-1">
 
               <h3>About Me</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -120,18 +134,31 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-12">
 
+            <div class="col-sm-10 col-sm-offset-1">
               <h3>Projects</h3>
-
-              <ul style="list-style-type:none">
-                <li><a href="https://floating-earth-90423.herokuapp.com/" target="blank">Rails Tutorial Sample App</a> My version of Michael Hartl's Ruby on Rails sample app.</li>
-                <li><a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank">Brick Breaker</a> A simple brick-breaker game.</li>
-                <li><a href="https://polaristlx.github.io/Snowy-Background-Project/" target="blank">Snowy Background</a> A snowy background animation.</li>
-                <li><a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank">War Card Game</a> A Javascript card game.</li>
-              </ul>
-
             </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-sm-offset-1 projectLinks">
+              <ul style="list-style-type:none">
+                <li><a href="https://floating-earth-90423.herokuapp.com/" target="blank">Rails Tutorial Sample App</a></li>
+                <li><a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank">Brick Breaker</a></li>
+                <li><a href="https://polaristlx.github.io/Snowy-Background-Project/" target="blank">Snowy Background</a></li>
+                <li><a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank">War Card Game</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-8 projectDescrip hidden-xs">
+              <ul style="list-style-type:none">
+                <li>My version of Michael Hartl's Ruby on Rails sample app.</li>
+                <li>A simple brick-breaker game.</li>
+                <li>A snowy background animation.</li>
+                <li>A Javascript card game.</li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
@@ -141,10 +168,10 @@
 
         <div class="container-fluid">
             <div class="row">
-              <div class="col-xs-6">
+              <div class="col-md-6">
                   <p>Made with &#10084; by collaboration between Kyle Lemon and Paul Rail.</p>
               </div>
-              <div class="col-xs-6">
+              <div class="col-md-6">
                   <ul style="list-style-type:none">
                     <li class="footerLogos"><a href="mailto:james.kyle.lemon@gmail.com?Subject=Microverse" target="blank"><img src="images/mail-logo.png" alt="E-mail"/></a></li>
                     <li class="footerLogos"><a href="https://www.linkedin.com/in/kyle-lemon-10487555/" target="blank"><img src="images/linkedin-logo.png" alt="LinkedIn"/></a></li>

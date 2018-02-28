@@ -38,17 +38,17 @@
 }
 
 #name {
-  width: 40%;
+  /* width: 40%; */
   margin: auto;
   padding: 15px;
   border-bottom: 1px solid #007F17;
 }
 #jobTitle {
   margin: auto;
-  padding-top: 20px;
+  padding: 20px 0px 35px 0px;
 }
+
 .home ul {
-  padding-top: 25px;
   padding-left: 0;
 }
 .home a {
@@ -57,10 +57,10 @@
 }
 .socialLinks {
   display: inline;
-  margin: 10px
+  margin-bottom: -10px;
 }
 .socialLogo {
-  padding: 5px 10px 5px 20px;
+  padding: 5px 10px 5px 0px;
   height: 40px;
 }
 
@@ -75,6 +75,12 @@
 }
 #projects ul {
   padding-left: 0;
+}
+.projectLinks {
+  float: left;
+}
+.projectDescrip {
+  /* float: right; */
 }
 
 
